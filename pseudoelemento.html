@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            font-size: 30px;
+            color: chartreuse;
+
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        a:visited{
+            color: rgb(63, 123, 2);
+        }
+
+
+        a::after{
+
+            content: '(link)';
+            color: rgba(62, 123, 2, 0.415); ;
+
+
+        }
+
+        a::before{
+            content: '✽';
+        }
+
+      
+
+
+    </style>
+</head>
+
+<body>
+    <h1>links com pseudo elemento(::) é sobre o conteudo</h1>
+
+    <ul>
+        <li><a href="https://codepen.io/your-work">codepen</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22">video</a></li>
+    </ul>
+    
+</body>
+</html>
